@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.63 69.63">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #faf9f7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #2a4b9a;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="0" y="0" width="69.63" height="69.63" rx="34.82" ry="34.82"/>
+  <polyline class="cls-1" points="18.94 36.2 28.6 45.86 50.69 23.77"/>
+</svg>

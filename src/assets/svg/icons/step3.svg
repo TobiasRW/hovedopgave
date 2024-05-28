@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 359.18 359.18">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-5 {
+        fill: #faf9f7;
+      }
+
+      .cls-2 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #2a4b9a;
+      }
+
+      .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-5 {
+        stroke: #c7f9cc;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5.08px;
+      }
+
+      .cls-4 {
+        fill: #57cc99;
+      }
+    </style>
+  </defs>
+  <g class="cls-6">
+    <g id="Lag_1" data-name="Lag 1">
+      <g>
+        <circle class="cls-3" cx="179.59" cy="179.59" r="179.59" transform="translate(-30.62 322.13) rotate(-79.14)"/>
+        <path class="cls-2" d="M72.29,226.05l114.37,132.93c87.03-3.34,158.18-68.57,170.64-152.95l-69.74-72.21-215.27,92.23Z"/>
+        <rect class="cls-4" x="70.54" y="132.09" width="218.1" height="95.01" rx="4.7" ry="4.7"/>
+        <g>
+          <path class="cls-1" d="M194.05,192.8l11.68,63.07c.62,3.34,4.49,4.93,7.28,2.98l15.83-11.08,22.81,32.57c1.48,2.11,4.39,2.63,6.51,1.15l2.14-1.5,2.29-1.6c2.11-1.48,2.63-4.39,1.15-6.51l-22.81-32.57,15.68-10.98c2.79-1.95,2.62-6.13-.31-7.85l-55.27-32.55c-3.45-2.03-7.7.94-6.97,4.88Z"/>
+          <line class="cls-5" x1="174.54" y1="179.78" x2="186.47" y2="186.51"/>
+          <line class="cls-5" x1="170.73" y1="201.47" x2="184.36" y2="200.1"/>
+          <line class="cls-5" x1="199.55" y1="166.92" x2="198.87" y2="180.6"/>
+          <line class="cls-5" x1="220.28" y1="174.38" x2="210.6" y2="184.06"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
