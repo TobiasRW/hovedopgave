@@ -10,6 +10,7 @@ import ContactPage from './pages/ContactPage'
 import UseGarantiPage from './pages/UseGarantiPage'
 import { Navigate } from 'react-router'
 import './index.css'
+import AboutPage from './pages/AboutPage'
 
 
 
@@ -32,6 +33,7 @@ function App() {
       <Route path="/hudforbedringsgaranti" element={<GarantiPage />} />
       <Route path="/journal" element={<JournalPage />} />
       <Route path="/faq" element={<FAQPage />} />
+      <Route path="/om-os" element={<AboutPage />} />
       <Route path="/kontakt-os" element={<ContactPage />} />
       <Route path="/garanti-krav" element={<UseGarantiPage />} />
       <Route path="*" element={<Navigate to="/" />} />

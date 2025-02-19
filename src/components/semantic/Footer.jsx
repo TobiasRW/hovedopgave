@@ -1,14 +1,18 @@
 import tiktok from '../../assets/svg/icons/tiktok.svg';
 import facebook from '../../assets/svg/icons/facebook.svg';
 import instagram from '../../assets/svg/icons/instagram.svg';
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
+
+    const navigate = useNavigate();
+
     return (
         <div className='flex flex-col gap-5 lg:gap-0 md:gap-8 w-[90%] md:w-4/5 mx-auto lg:grid lg:grid-cols-[2fr,1fr] pb-10 lg:pb-16'>
             <div className="flex flex-col gap-5 md:flex-row md:justify-between md:border-b-[1px] md:border-blue lg:border-none">
                 <div className="border-b-[1px] border-blue pb-6 md:pb-8 md:border-none">
                     <ul className='flex flex-col gap-4 md:gap-6'>
-                        <li className="font-archivo font-thin text-sm sm:text-base xl:text-lg 2xl:text-xl cursor-pointer hover:text-blue transition-all duration-300">Om os</li>
+                        <li onClick={() => navigate('/om-os')} className="font-archivo font-thin text-sm sm:text-base xl:text-lg 2xl:text-xl cursor-pointer hover:text-blue transition-all duration-300">Om os</li>
                         <li className="font-archivo font-thin text-sm sm:text-base xl:text-lg 2xl:text-xl cursor-pointer hover:text-blue transition-all duration-300">Persondatapolitik</li>
                         <li className="font-archivo font-thin text-sm sm:text-base xl:text-lg 2xl:text-xl cursor-pointer hover:text-blue transition-all duration-300">Refunderingspolitik</li>
                         <li className="font-archivo font-thin text-sm sm:text-base xl:text-lg 2xl:text-xl cursor-pointer hover:text-blue transition-all duration-300">Leveringspolitik</li>

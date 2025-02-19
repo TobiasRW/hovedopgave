@@ -37,7 +37,7 @@ export default function HeroSection() {
     return (
         <div className="">
             <div className="">
-                <img src={backgroundImage} className='w-full h-screen object-cover object-center' alt="banner" />
+                <img src={backgroundImage} className='w-full h-[100svh] object-cover object-center' alt="banner" />
             </div>
             <div className="absolute inset-0 flex justify-center items-end pb-8 sm:items-center sm:pb-40 2lg:justify-end 2lg:items-end 2lg:pb-20 2lg:pr-20 xl:pr-40 xl:pb-28 2xl:pb-40 3xl:pr-64">
                 <div className="flex flex-col justify-center items-center sm:gap-10">

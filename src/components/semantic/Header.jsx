@@ -10,7 +10,7 @@ import Cart from '../interactions/Cart'
 
 
 export default function Header() {
-    
+
     // Åben og luk kurv______________________________________________________
     const [isCartOpen, setIsCartOpen] = useState(false);
 
@@ -30,7 +30,7 @@ export default function Header() {
     // Ændre header baggrundsfarve ved scroll______________________________________________________
     const [color, setColor] = useState(false);
     const changeColor = () => {
-        if (window.location.pathname === '/') { // Tjek om siden er forsiden
+        if (window.location.pathname === '/' || window.location.pathname === '/om-os') { // Tjek om siden er forsiden
             if (window.scrollY >= 200) {
                 setColor(true); // Hvis scrollY er større end 200 sættes baggrundsfarven til hvid
                 setIsOpen(false); // Luk sidemenuen hvis den er åben når der scrolles
@@ -170,40 +170,47 @@ export default function Header() {
                         lg:[--x-from:0%] [--x-from:-100%]
                         [--x-to:0%]
 
-                        lg:flex-row sm:pt-14 sm:pl-14 lg:pt-0 lg:pl-0 lg:relative lg:text-xl lg:justify-center lg:items-center lg:gap-14 2lg:text-2xl 2xl:gap-20
+                        lg:flex-row sm:pt-14 sm:pl-14 lg:pt-0 lg:pl-0 lg:relative lg:text-xl lg:justify-center lg:items-center xl:gap-14 xl:text-2xl 2xl:gap-20
                         '
                             variants={menuVariants}
                             initial="closed"
                             animate={isOpen ? "open" : "closed"}
                         >
                             <motion.li
-                                   className={`[--opacity-from:0.1] [--opacity-to:1] lg:[--opacity-from:1] lg:[--opacity-to:1]
+                                className={`[--opacity-from:0.1] [--opacity-to:1] lg:[--opacity-from:1] lg:[--opacity-to:1]
                                    [--x-to:0%] [--x-from:-100%] lg:[--x-from:0%] lg:[--x-to:0%] ${color ? 'lg:text-blue' : 'lg:text-white'}`}
                                 variants={liVariants}
                                 whileHover={{ scale: 1.05 }}
                             >
                                 <NavLink to="/produkt" >cølm calming cream</NavLink>
                             </motion.li >
-                            <motion.li  className={`[--opacity-from:0.1] [--opacity-to:1] lg:[--opacity-from:1] lg:[--opacity-to:1]
+                            <motion.li className={`[--opacity-from:0.1] [--opacity-to:1] lg:[--opacity-from:1] lg:[--opacity-to:1]
                                    [--x-to:0%] [--x-from:-100%] lg:[--x-from:0%] lg:[--x-to:0%] ${color ? 'lg:text-blue' : 'lg:text-white'}`}
                                 variants={liVariants}
                                 whileHover={{ scale: 1.05 }}
                             >
                                 <NavLink to="/hudforbedringsgaranti">Hudforbedringsgaranti</NavLink>
                             </motion.li>
-                            <motion.li  className={`[--opacity-from:0.1] [--opacity-to:1] lg:[--opacity-from:1] lg:[--opacity-to:1]
+                            <motion.li className={`[--opacity-from:0.1] [--opacity-to:1] lg:[--opacity-from:1] lg:[--opacity-to:1]
                                    [--x-to:0%] [--x-from:-100%] lg:[--x-from:0%] lg:[--x-to:0%] ${color ? 'lg:text-blue' : 'lg:text-white'}`}
                                 variants={liVariants}
                                 whileHover={{ scale: 1.05 }}
                             >
                                 <NavLink to="/journal">cølm journal</NavLink>
                             </motion.li>
-                            <motion.li  className={`[--opacity-from:0.1] [--opacity-to:1] lg:[--opacity-from:1] lg:[--opacity-to:1]
+                            <motion.li className={`[--opacity-from:0.1] [--opacity-to:1] lg:[--opacity-from:1] lg:[--opacity-to:1]
                                    [--x-to:0%] [--x-from:-100%] lg:[--x-from:0%] lg:[--x-to:0%] ${color ? 'lg:text-blue' : 'lg:text-white'}`}
                                 variants={liVariants}
                                 whileHover={{ scale: 1.05 }}
                             >
                                 <NavLink to="/faq">FAQ</NavLink>
+                            </motion.li>
+                            <motion.li className={`[--opacity-from:0.1] [--opacity-to:1] lg:[--opacity-from:1] lg:[--opacity-to:1]
+                                   [--x-to:0%] [--x-from:-100%] lg:[--x-from:0%] lg:[--x-to:0%] ${color ? 'lg:text-blue' : 'lg:text-white'}`}
+                                variants={liVariants}
+                                whileHover={{ scale: 1.05 }}
+                            >
+                                <NavLink to="/om-os">Om os</NavLink>
                             </motion.li>
                         </motion.ul>
                     </div>
@@ -216,6 +223,6 @@ export default function Header() {
                 <Cart isCartOpen={isCartOpen} toggleCart={toggleCart} />
             </motion.div>
         </>
-        
+
     )
 }
